@@ -15,7 +15,7 @@ const struct = {
 
 const commands = {};
 let systemData = {};
-const rootPath = 'users/codebytere/root';
+const rootPath = 'users/dvuvne/root';
 
 const getDirectory = () => localStorage.directory;
 const setDirectory = (dir) => {
@@ -144,7 +144,6 @@ $(() => {
   pages.push($.get('pages/resume.html'));
   pages.push($.get('pages/root.html'));
   pages.push($.get('pages/skills.html'));
-  pages.push($.get('pages/talks.html'));
   $.when
     .apply($, pages)
     .done(
@@ -167,7 +166,6 @@ $(() => {
         systemData['resume'] = resumeData[0];
         systemData['root'] = rootData[0];
         systemData['skills'] = skillsData[0];
-        systemData['talks'] = talksData[0];
       },
     );
 
